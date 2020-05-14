@@ -1,4 +1,4 @@
-============
+========================
 NixOS on WSL for newbies 
 ========================
 A minimal root filesystem for running NixOS on WSL. It can be used with
