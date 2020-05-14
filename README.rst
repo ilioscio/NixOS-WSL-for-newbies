@@ -38,7 +38,7 @@ The resulting mini rootfs can then be found under
 How to deploy
 ============
 
- Assume
+Assume
 
 * You put your ``nixos-system-x86_64-linux.tar.gz`` into ``%userprofile%\NixOS``
  
