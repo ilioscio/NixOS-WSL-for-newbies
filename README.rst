@@ -1,7 +1,6 @@
 ============
-NixOS on WSL
-============
-
+NixOS on WSL for newbies 
+========================
 A minimal root filesystem for running NixOS on WSL. It can be used with
 DistroLauncher_ as ``install.tar.gz``.
 
