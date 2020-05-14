@@ -35,6 +35,23 @@ The resulting mini rootfs can then be found under
 ``./result-2/tarball/nixos-system-x86_64-linux.tar.gz``.
 
 
+How to deploy
+============
+Assume 
+* You put nixos-system-x86_64-linux.tar.gz into %userprofile%\NixOS
+ 
+then
+* Open Powershell and execute
+  wsl --import NixOS %userprofile%\NixOSnixos-system-x86_64-linux.tar.gz --version 2
+* Start wsl and execute the lines from activate.sh
+* Exit and restart wsl
+* Now can copy your adaptation of configuration.nix and the hardware-configuration.nix
+  from i.e. the nixos where you built the tarball to \\wsl$\NIXOS\etc\nixos and
+* then execute sudo nixos-rebuild switch
+
+ 
+ ::
+
 Further links
 =============
 
