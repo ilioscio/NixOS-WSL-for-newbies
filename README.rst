@@ -44,11 +44,11 @@ Assume
 Then
 
 * Open Powershell and execute
-  wsl --import NixOS %userprofile%\NixOSnixos-system-x86_64-linux.tar.gz --version 2
+wsl --import NixOS %userprofile%\NixOSnixos-system-x86_64-linux.tar.gz --version 2
 * Start wsl and execute the lines from activate.sh
 * Exit and restart wsl
 * Now can copy your adaptation of configuration.nix and the hardware-configuration.nix
-  from i.e. the nixos where you built the tarball to \\wsl$\NIXOS\etc\nixos and
+  from i.e. the nixos where you built the tarball to \\\\wsl$\\NIXOS\\etc\\nixos and
 * then execute sudo nixos-rebuild switch
 
  
