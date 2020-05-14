@@ -43,7 +43,7 @@ Assume
  
 Then
 
-* Open Powershell and execute ``wsl --import NixOS %userprofile%\\NixOS nixos-system-x86_64-linux.tar.gz --version 2``
+* Open Powershell and execute ``wsl --import NixOS %userprofile%\NixOS nixos-system-x86_64-linux.tar.gz --version 2``
 * Start wsl and execute the lines from ``activate.sh``
 * Exit and restart wsl
 * Now can copy your adaptation of ``configuration.nix`` and the ``hardware-configuration.nix``
