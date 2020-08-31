@@ -18,7 +18,8 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     git rclone wget neovim
+     zsh neovim git wget curl w3m ncdu iftop iotop rsync tmux tcpdump nmap unrar which zip 
+     bashCompletion coreutils lsof file tree parted jq
   ];
 
   #nix.binaryCaches = [ "https://cache.nixos.org/" "https://nixcache.reflex-frp.org" ];
