@@ -18,11 +18,11 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     git rclone treesheets openjdk11 wget vim google-chrome kate vscode netbeans
+     git rclone wget neovim
   ];
 
-  nix.binaryCaches = [ "https://cache.nixos.org/" "https://nixcache.reflex-frp.org" ];
-  nix.binaryCachePublicKeys = [ "ryantrinkle.com-1:JJiAKaRv9mWgpVAz8dwewnZe0AzzEAzPkagE9SP5NWI=" ];
+  #nix.binaryCaches = [ "https://cache.nixos.org/" "https://nixcache.reflex-frp.org" ];
+  #nix.binaryCachePublicKeys = [ "ryantrinkle.com-1:JJiAKaRv9mWgpVAz8dwewnZe0AzzEAzPkagE9SP5NWI=" ];
 
 
   environment.etc.hosts.enable = false;
@@ -32,7 +32,7 @@ in
 
   users.users.${defaultUser} = {
     isNormalUser = true;
-    hashedPassword ="$6$f7cdeHLa$rQU7w8/d0PgA16nufz9rHJWmwFJvw3O7vqDjiw3Gw4E5XRglsRCYx6C4XpJTcL0RByMDrUz2KKENjcqh3QIM..";
+    #hashedPassword ="$6$f7cdeHLa$rQU7w8/d0PgA16nufz9rHJWmwFJvw3O7vqDjiw3Gw4E5XRglsRCYx6C4XpJTcL0RByMDrUz2KKENjcqh3QIM..";
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
   
@@ -62,16 +62,16 @@ in
   # Don't allow emergency mode, because we don't have a console.
   systemd.enableEmergencyMode = false;
   # Enable the X11 windowing system.
-  services.xserver.xkbModel = "pc85";
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-  services.xserver.xkbOptions = "eurosign:e";
+  #services.xserver.xkbModel = "pc85";
+  #services.xserver.enable = true;
+  #services.xserver.layout = "us";
+  #services.xserver.xkbOptions = "eurosign:e";
 
   # Enable touchpad support.
-  services.xserver.libinput.enable = true;
+  #services.xserver.libinput.enable = true;
 
   # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  #services.xserver.displayManager.sddm.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
   services.udev.packages = [ pkgs.android-udev-rules ];
 }
